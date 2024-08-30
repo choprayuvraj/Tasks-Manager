@@ -1,0 +1,49 @@
+.form-div {
+    width: 65%;
+    height: 4rem;
+    border: 2px solid grey;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.front {
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    opacity: 0;
+    transition: opacity 0.12s ease-in-out;
+}
+
+.checkbox {
+    width: 20px;
+}
+
+p {
+    width: 45%;
+}
+
+.edit-btn {
+    background-color:rgb(78, 132, 248);
+}
+
+.delete-btn {
+    background-color: brown;
+}
+
+.form-div:hover {
+    & .back {
+        opacity: 1;
+    }
+}
